@@ -14,11 +14,15 @@ int max=INT_MIN;
 int min=INT_MAX;
 for (int i = 0; i < count; i++)
 {
-    /* code */if (array[i]>max)
+    /* we can also write this code as
+    max=max(max,array[i]);
+    min=min(min,array[i]);
+     */
+    if (array[i]>max)
     {
         max=array[i];
     }
-    else if (array[i]<min)
+     if (array[i]<min)
     {
         /* code */min=array[i];
     }
